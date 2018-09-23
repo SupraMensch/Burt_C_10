@@ -9,15 +9,15 @@
 // 3. This loop should display all of the values that are prime.
 package burt_c_10;
 
-
-public class Burt_C_10 {
-
+public class Burt_C_10 
+{
    //Main method loop that passes values 1-100
     public static void main(String[] args) 
     {
         for (int i = 0; i <= 100; i++)
         isPrime(i);
     }
+    
     // Method that accepts integer values and returns true/false boolean; also displays prime values
     public static boolean isPrime(int num)
     {
