@@ -12,12 +12,21 @@ package burt_c_10;
 
 public class Burt_C_10 {
 
-    /**
-     * @param args the command line arguments
-     */
-    
-    public static void main(String[] args) {
-        // TODO code application logic here
+   //Main method loop that passes values 1-100
+    public static void main(String[] args) 
+    {
+        for (int i = 0; i <= 100; i++)
+        isPrime(i);
     }
-    
+    // Method that accepts integer values and returns true/false boolean; also displays prime values
+    public static boolean isPrime(int num)
+    {
+        if (num < 2) return false;
+        if (num == 2) return true;
+        if (num % 2 == 0) return false;
+        for (int i = 3; i * i <= num; i += 2)
+            if (num % i == 0) return false;
+        System.out.println(num);
+        return true;  
+    }
 }
