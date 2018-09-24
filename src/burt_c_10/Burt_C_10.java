@@ -21,11 +21,15 @@ public class Burt_C_10
     // Method that accepts integer values and returns true/false boolean; also displays prime values
     public static boolean isPrime(int num)
     {
-        if (num < 2) return false;
-        if (num == 2) return true;
-        if (num % 2 == 0) return false;
+        if (num < 2) 
+            return false;
+        if (num == 2)
+            return true;
+        if (num % 2 == 0)
+            return false;
         for (int i = 3; i * i <= num; i += 2)
-            if (num % i == 0) return false;
+            if (num % i == 0)
+                return false;
         System.out.println(num);
         return true;  
     }
